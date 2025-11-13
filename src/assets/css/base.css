@@ -1,0 +1,65 @@
+:root {
+  /*Tipografia*/
+  --font-title: 'Segoe UI', Roboto, 'Helvetica Neue', 'sans-serif';
+  --font-text: 'Poppins', sans-serif;
+
+  /*Tamaños*/
+  --radius: 8px;
+  --radius-lg: 12px;
+
+  /* Espaciado */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  /* Transiciones */
+  --transition: all 0.3s ease-in-out;
+
+  /*Colores*/
+  --primary: rgb(0, 78, 167);
+  --primary-50: rgba(0, 78, 167, 0.5);
+  --primary-hover: rgb(25, 80, 134);
+  --secondary: rgb(255, 68, 68);
+  --secondary-50: rgba(255, 68, 68, 0.5);
+  --secondary-hover: rgb(255, 88, 88);
+  --white: #ffffff;
+  --background: #1f2020;
+  --text: #ffffff;
+  --text-light: #666666;
+  --text-muted: #888888;
+  --border: #e0e0e0;
+  --border-hover: #d0d0d0;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.1);
+  --light: rgba(255, 255, 255, 0.85);
+  --dark: rgba(0, 0, 0, 0.85);
+
+  /*Gradiantes*/
+  --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-hover));
+  --gradient-secondary: linear-gradient(135deg, var(--secondary), var(--secondary-hover));
+  --gradient-primary-50: linear-gradient(135deg, var(--primary), var(--primary-50));
+  --gradient-secondary-50: linear-gradient(135deg, var(--secondary), var(--secondary-50));
+  --gradient-primary-secondary: linear-gradient(135deg, var(--primary), var(--secondary));
+  --gradient-secondary-primary: linear-gradient(135deg, var(--secondary), var(--primary));
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  background-color: var(--background);
+}
