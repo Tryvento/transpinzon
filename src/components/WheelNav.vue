@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch, onMounted } from 'vue';
+import { ref, watch } from 'vue';
 
 const props = defineProps({
     sections: {
@@ -31,7 +31,7 @@ const animateRotation = (targetRotation) => {
     
     const rotationDiff = finalTargetRotation - startRotation;
     const startTime = performance.now();
-    const duration = 2000; // 2 segundos para que sea rápida pero con muchas vueltas
+    const duration = 1000; // 2 segundos para que sea rápida pero con muchas vueltas
     
     isAnimating.value = true;
     
@@ -84,7 +84,8 @@ const select = (id) => {
             <!-- Contenedor que recorta la rueda para mostrar solo la mitad -->
             <div class="wheel-clip">
                 <div class="wheel" :style="{ transform: `rotate(${rotation}deg)` }">
-                    <Icon icon="game-icons:car-wheel" class="wheel-icon" />
+                    <img src="../assets/img/wheel.png" alt="" class="wheel-icon">
+                    <!--<Icon icon="game-icons:car-wheel" class="wheel-icon" />-->
                 </div>
             </div>
             <div class="controls">
@@ -110,7 +111,7 @@ const select = (id) => {
 <style scoped>
 .wheel-nav {
     position: relative;
-    transform: translateX(-20%);
+    transform: translateX(-10%);
     width: 100%;
     z-index: 10;
     display: flex;
@@ -145,6 +146,7 @@ const select = (id) => {
     pointer-events: none;
     position: absolute;
     left: -160px; /* Desplazamos la rueda para mostrar solo la mitad derecha */
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
 }
 
 .wheel-icon {
@@ -372,6 +374,10 @@ const select = (id) => {
     
     .btn-nav-active {
         scale: 1.2;
+    }
+
+    .btn-nav-active .btn-icon {
+        transform: translate(-50%, -50%) scale(1.1);
     }
 
     

@@ -46,6 +46,7 @@
     <footer class="footer">
       <div class="container">
         <p>&copy; 2025 Transpinzon. Todos los derechos reservados.</p>
+        <p class="disclaimer">Esta página es una primera entrega sujeta a cambios y modificaciones. Tanto los textos como las imágenes son de prueba para el desarrollo.</p>
       </div>
     </footer>
   </div>
@@ -280,6 +281,17 @@ nav {
   padding: var(--space-md) 0;
   text-align: center;
   margin-top: auto;
+  font-family: var(--font-text);
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: var(--space-sm);
+  opacity: 0.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Mobile Menu */
