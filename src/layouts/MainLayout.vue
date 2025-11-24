@@ -51,7 +51,18 @@
     
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Transpinzon. Todos los derechos reservados.</p>
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>&copy; 2025 Transpinzon. Todos los derechos reservados.</p>
+          </div>
+          <div class="footer-contact">
+            <p class="developer-credit">Desarrollado por <strong>TRYVENTO SOLUCIONES DE SOFTWARE</strong></p>
+            <a href="https://wa.me/573219231178" target="_blank" class="whatsapp-link" aria-label="Contactar por WhatsApp">
+              <Icon icon="hugeicons:whatsapp" class="icon" />
+              <span>+57 321 923 1178</span>
+            </a>
+          </div>
+        </div>
         <p class="disclaimer">Esta página es una primera entrega sujeta a cambios y modificaciones. Tanto los textos como las imágenes son de prueba para el desarrollo.</p>
       </div>
     </footer>
@@ -284,20 +295,65 @@ nav {
 .footer {
   background: var(--dark);
   color: var(--white);
-  padding: var(--space-md) 0;
+  padding: var(--space-lg) 0;
   text-align: center;
   margin-top: auto;
   font-family: var(--font-text);
+  border-top: 4px solid var(--primary);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.footer-info p {
+  margin-bottom: var(--space-xs);
+  opacity: 0.9;
+}
+
+.developer-credit {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.developer-credit strong {
+  color: rgb(61, 61, 255);
+}
+
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: var(--transition);
+  margin-top: var(--space-xs);
+}
+
+.whatsapp-link:hover {
+  color: #25D366;
+}
+
+.whatsapp-link .icon {
+  font-size: 1rem;
+  color: var(--white);
 }
 
 .disclaimer {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  margin-top: var(--space-sm);
-  opacity: 0.8;
+  margin-top: var(--space-md);
+  opacity: 0.6;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: var(--space-sm);
 }
 
 /* Mobile Menu */
