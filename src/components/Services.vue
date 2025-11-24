@@ -182,6 +182,7 @@ onBeforeUnmount(() => {
 .services-section {
   padding: var(--space-md) 0;
   width: 100%;
+  height: auto;
   max-width: 100%; /* Asegurar que no exceda el contenedor padre */
 }
 

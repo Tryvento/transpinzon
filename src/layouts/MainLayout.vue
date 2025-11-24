@@ -33,6 +33,12 @@
               <li class="nav-item">
                 <a href="#contact" class="nav-link" @click="(e) => scrollToSection(e, '#contact')">Contacto</a>
               </li>
+              <li class="nav-item">
+                <a href="#services" class="nav-link" @click="(e) => scrollToSection(e, '#services')">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a href="#gallery" class="nav-link" @click="(e) => scrollToSection(e, '#gallery')">Galeria</a>
+              </li>
             </ul>
           </nav>
         </div>

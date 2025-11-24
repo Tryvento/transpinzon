@@ -1,4 +1,5 @@
 <template>
+    <section id="about">
     <div class="who-content">
         <div class="title">
             <img :src="hero" alt="">
@@ -9,6 +10,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet impedit maiores quaerat corporis eligendi et praesentium doloribus id earum at deserunt totam placeat perspiciatis, odit laboriosam quibusdam omnis dignissimos!</p>
         </div>
     </div>
+    </section>
 </template>
 
 <script setup>
@@ -20,6 +22,14 @@ const hero = hero1
 
 <style scoped>
 
+#about{
+    padding: var(--space-lg);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .who-content {
     background-color: var(--white);
     overflow: hidden;

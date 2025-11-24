@@ -1,12 +1,16 @@
 <template>
     <HeroSection />
-    <AboutSection />
+    <Who />
+    <Services />
+    <Gallery />
     <ContactSection />
 </template>
 
 <script setup>
 import HeroSection from '@/components/HeroSection.vue';
-import AboutSection from '@/components/AboutSection.vue';
+import Who from '@/components/Who.vue';
+import Services from '@/components/Services.vue';
+import Gallery from '@/components/Gallery.vue';
 import ContactSection from '@/components/ContactSection.vue';
 </script>
 

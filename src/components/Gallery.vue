@@ -78,7 +78,8 @@ const nextImage = () => {
 <style scoped>
 .gallery-section {
   width: 100%;
-  height: 00px;
+  height: auto;
+  padding: var(--space-lg);
   display: flex;
   justify-content: center;
   align-items: center;
