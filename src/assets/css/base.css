@@ -18,11 +18,11 @@
   --transition: all 0.3s ease-in-out;
 
   /*Colores*/
-  --primary: rgb(0, 78, 167);
-  --primary-50: rgba(0, 78, 167, 0.5);
+  --primary: rgb(7, 50, 99);
+  --primary-50: rgba(41, 79, 122, 0.5);
   --primary-hover: rgb(25, 80, 134);
-  --secondary: rgb(255, 68, 68);
-  --secondary-50: rgba(255, 68, 68, 0.5);
+  --secondary: rgb(204, 43, 43);
+  --secondary-50: rgba(158, 43, 43, 0.5);
   --secondary-hover: rgb(255, 88, 88);
   --white: #fdf7ee;
   --background: #1f2020;
