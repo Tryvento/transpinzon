@@ -16,7 +16,7 @@
                 <p class="hero-subtitle">Transporte logístico confiable, rápido y seguro en todo el territorio nacional.</p>
                 <div class="button-container">
                     <button class="btn btn-primary" @click="scrollToSection('#about')">Conócenos</button>
-                    <button class="btn btn-outline">Descargar Catálogo</button>
+                    <button class="btn btn-outline" @click="downloadCatalog">Descargar Catálogo</button>
                 </div>
             </div>
         </div>
@@ -30,6 +30,7 @@ import hero2 from '@/assets/img/placeholders/hero_2.png';
 import hero3 from '@/assets/img/placeholders/hero_3.png';
 import hero4 from '@/assets/img/placeholders/hero_4.png';
 import hero5 from '@/assets/img/placeholders/hero_5.png';
+import catalog from '@/assets/files/catalog.pdf'
 
 const heroImages = [
     { src: hero1 },
@@ -41,6 +42,10 @@ const heroImages = [
 
 const currentIndex = ref(0);
 let slideInterval;
+
+const downloadCatalog = () => {
+    window.open(catalog, '_blank');
+};
 
 const currentImage = computed(() => heroImages[currentIndex.value]);
 const nextImage = computed(() => {
