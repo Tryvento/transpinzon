@@ -70,7 +70,7 @@
       <div v-if="selectedService" class="modal-overlay" @click.self="closeDetails">
         <div class="modal-content">
           <button class="btn-close" @click="closeDetails" aria-label="Cerrar">
-            <Icon icon="picon:close" />
+            <Icon icon="fa:close" />
           </button>
           
           <div class="modal-body">
@@ -453,7 +453,7 @@ onBeforeUnmount(() => {
   justify-content: center;
   z-index: 10;
   transition: var(--transition);
-  color: var(--text);
+  color: var(--primary);
 }
 
 .btn-close:hover {
